@@ -58,7 +58,7 @@ module.exports = {
                     }
                 });
                 const mailOptions = {
-                    from: 'muh.joseph27@gmail.com',
+                    from: process.env.EMAIL,
                     to: data.email,
                     subject: 'Activation Email',
                     text: 'One step closer!!!, please verify your email!',
